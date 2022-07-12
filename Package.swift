@@ -16,9 +16,11 @@ let package = Package(
             targets: ["Dynamics"]),
     ],
     dependencies: [
-      .package(url: "https://github.com/nicolas-miari/System.git", from: "0.0.0"),
+      .package(url: "https://github.com/nicolas-miari/System.git", from: "0.0.2"),
       .package(url: "https://github.com/nicolas-miari/Transform.git", from: "0.0.0"),
       .package(url: "https://github.com/nicolas-miari/Entity.git", from: "0.0.0"),
+      .package(url: "https://github.com/nicolas-miari/RigidBody.git", from: "0.0.0"),
+      .package(url: "https://github.com/nicolas-miari/Component.git", from: "0.0.2"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -29,6 +31,8 @@ let package = Package(
               .product(name: "System", package: "System"),
               .product(name: "Transform", package: "Transform"),
               .product(name: "Entity", package: "Entity"),
+              .product(name: "RigidBody", package: "RigidBody"),
+              .product(name: "Component", package: "Component"),
             ]),
         .testTarget(
             name: "DynamicsTests",

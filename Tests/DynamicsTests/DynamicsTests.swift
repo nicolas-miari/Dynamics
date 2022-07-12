@@ -1,5 +1,6 @@
 import XCTest
-@testable import Dynamics
+import Dynamics
 
 final class DynamicsTests: XCTestCase {
+  // TODO: Write tests!
 }

@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nicolas-miari/Component",
       "state" : {
-        "revision" : "6bd867eaf76f2617d19ec615440aa2660a0597e5",
-        "version" : "0.0.1"
+        "revision" : "02a14fe587102ee46a97cf4461b4cf6d6da4e9cd",
+        "version" : "0.0.2"
       }
     },
     {
@@ -28,12 +28,30 @@
       }
     },
     {
+      "identity" : "matrixutils",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nicolas-miari/MatrixUtils.git",
+      "state" : {
+        "revision" : "8f2363edca6bd853f5d38034a3314fe5584a6163",
+        "version" : "0.0.0"
+      }
+    },
+    {
+      "identity" : "rigidbody",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nicolas-miari/RigidBody.git",
+      "state" : {
+        "revision" : "38dfdbf978d444558b5efb68d2c4c949adccc40b",
+        "version" : "0.0.1"
+      }
+    },
+    {
       "identity" : "system",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nicolas-miari/System.git",
       "state" : {
-        "revision" : "f5d5b63e86b0a66e5e88374487dbc5e40f460547",
-        "version" : "0.0.0"
+        "revision" : "cc94d3f4754589ca23feca71136bd2d4a3c71a04",
+        "version" : "0.0.2"
       }
     },
     {
@@ -41,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nicolas-miari/Transform.git",
       "state" : {
-        "revision" : "013c7ad6b8fbe9c84b97b05865db6cd627b01ceb",
-        "version" : "0.0.0"
+        "revision" : "884ac78dc5f9044caf5e5bc50454d75cfbce2c9e",
+        "version" : "0.0.1"
       }
     }
   ],
