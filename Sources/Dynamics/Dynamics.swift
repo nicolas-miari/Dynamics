@@ -11,7 +11,8 @@ class Dynamics: System {
 
   func cacheEntity(id: EntityIdentifier, components: ComponentSet) {
     // Once we make sure the component set contains all the required components, group them as non-
-    // optionals in a custom struct, and store that.
+    // optionals in a custom struct, and cache that instead of the component set, to avoid having
+    // to inspect and unwrap on every access.
     guard let transform = components.element(ofType: Transform.self) else {
       return
     }
