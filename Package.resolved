@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nicolas-miari/Component",
       "state" : {
-        "revision" : "02a14fe587102ee46a97cf4461b4cf6d6da4e9cd",
-        "version" : "0.0.2"
+        "revision" : "0d9817c438eb1b12720ac6376d24bc028bcfc2fd",
+        "version" : "1.0.0"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nicolas-miari/RigidBody.git",
       "state" : {
-        "revision" : "38dfdbf978d444558b5efb68d2c4c949adccc40b",
-        "version" : "0.0.1"
+        "revision" : "44217cc927c8ee26f5a7d68facec3321fe482339",
+        "version" : "1.0.0"
       }
     },
     {
@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nicolas-miari/System.git",
       "state" : {
-        "revision" : "cc94d3f4754589ca23feca71136bd2d4a3c71a04",
-        "version" : "0.0.2"
+        "revision" : "b9ec0f5c918cd59895cbf7dc9fe6d593c53f45a0",
+        "version" : "1.0.0"
       }
     },
     {
@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nicolas-miari/Transform.git",
       "state" : {
-        "revision" : "884ac78dc5f9044caf5e5bc50454d75cfbce2c9e",
-        "version" : "0.0.1"
+        "revision" : "14417494fd290fc7179e628bb7b135b1e8fe0de4",
+        "version" : "1.0.0"
       }
     }
   ],

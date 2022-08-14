@@ -9,14 +9,14 @@ class Dynamics: System {
 
   // MARK: - System
 
-  func cacheEntity(id: EntityIdentifier, components: ComponentSet) {
+  func cacheEntity(id: EntityIdentifier, components: ComponentList) {
     // Once we make sure the component set contains all the required components, group them as non-
     // optionals in a custom struct, and cache that instead of the component set, to avoid having
     // to inspect and unwrap on every access.
-    guard let transform = components.element(ofType: Transform.self) else {
+    guard let transform = components.component(ofType: Transform.self) else {
       return
     }
-    guard let rigidBody = components.element(ofType: RigidBody.self) else {
+    guard let rigidBody = components.component(ofType: RigidBody.self) else {
       return
     }
     entityTable[id] = DynamicEntity(transform: transform, rigidBody: rigidBody)
@@ -26,13 +26,14 @@ class Dynamics: System {
     entityTable[id] = nil
   }
 
-  func canOperateOnEntity(id: EntityIdentifier, components: ComponentSet) -> Bool {
+  func canOperateOnEntity(id: EntityIdentifier, components: ComponentList) -> Bool {
+    /*
     guard components.containsElement(ofType: Transform.self) else {
       return false
     }
     guard components.containsElement(ofType: RigidBody.self) else {
       return false
-    }
+    }*/
     return true
   }
 
@@ -66,3 +67,7 @@ private struct DynamicEntity {
   let transform: Transform
   let rigidBody: RigidBody
 }
+
+extension RigidBody: KeyedComponent {}
+
+extension Transform: KeyedComponent {}
